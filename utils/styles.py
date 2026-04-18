@@ -712,6 +712,19 @@ def inject_css():
         font-family: 'Space Grotesk', sans-serif;
         line-height: 1;
     }
+    .trend-ma-inline [data-testid="stPills"] [role="listbox"],
+    .trend-ma-inline [data-testid="stPills"] [role="group"] {
+        flex-wrap: nowrap !important;
+        justify-content: center;
+        gap: 6px;
+    }
+    .trend-ma-inline [data-testid="stPills"] [role="option"],
+    .trend-ma-inline [data-testid="stPills"] button {
+        flex: 0 0 auto;
+    }
+    .trend-ma-inline .trend-control-body {
+        overflow-x: visible;
+    }
     .trend-control-body {
         background: rgba(19, 32, 64, 0.96);
         border: 1px solid rgba(30, 48, 88, 0.9);
@@ -992,6 +1005,11 @@ def inject_css():
         [data-testid="stPills"] [role="option"],
         [data-testid="stPills"] button {
             flex: 0 0 auto;
+        }
+        .trend-ma-inline [data-testid="stPills"] [role="listbox"],
+        .trend-ma-inline [data-testid="stPills"] [role="group"] {
+            justify-content: flex-start;
+            overflow-x: auto;
         }
         [data-testid="stTabs"] [data-baseweb="tab-list"] {
             gap: 0.15rem;

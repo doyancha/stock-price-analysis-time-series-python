@@ -69,6 +69,7 @@ def render():
             key="trend_tickers",
         )
     with col_b:
+        st.markdown('<div class="trend-ma-inline">', unsafe_allow_html=True)
         ma_options = _box_multiselect(
             "Moving averages",
             [10, 20, 50, 100, 200],
@@ -76,6 +77,7 @@ def render():
             format_func=lambda x: f"MA {x}",
             key="trend_ma",
         )
+        st.markdown('</div>', unsafe_allow_html=True)
     with col_c:
         date_outer = st.container(border=True)
         date_outer.markdown(
