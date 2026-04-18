@@ -676,32 +676,28 @@ def inject_css():
         display: flex;
         flex-direction: column;
         gap: 10px;
+        justify-content: flex-start;
     }
     .trend-control-head {
         background: rgba(19, 32, 64, 0.96);
         border: 1px solid rgba(30, 48, 88, 0.9);
         border-radius: 12px;
-        min-height: 42px;
+        min-height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 8px 10px;
+        padding: 0 12px;
+        text-align: center;
     }
     .trend-control-body {
         background: rgba(19, 32, 64, 0.96);
         border: 1px solid rgba(30, 48, 88, 0.9);
         border-radius: 12px;
-        min-height: 60px;
+        min-height: 88px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px 12px;
-    }
-    .trend-date-shell {
-        min-height: 110px;
-    }
-    .trend-date-body {
-        min-height: 52px;
     }
     .trend-control-title {
         text-align: center;
@@ -746,10 +742,17 @@ def inject_css():
     [data-testid="stDateInput"] > div {
         background: transparent !important;
     }
+    [data-testid="stDateInput"] {
+        width: 100%;
+    }
+    .trend-date-body [data-testid="stDateInput"] > div {
+        width: 100%;
+    }
     .trend-date-body [data-testid="stDateInput"] > div > div {
         background: rgba(255,255,255,0.05) !important;
         border: 1px solid rgba(30, 48, 88, 0.92) !important;
         border-radius: 10px !important;
+        width: 100%;
     }
     [data-testid="stDateInput"] input {
         min-height: 2.75rem;
@@ -795,18 +798,12 @@ def inject_css():
             padding: 10px;
         }
         .trend-control-head {
-            min-height: 40px;
-            padding: 7px 9px;
+            min-height: 44px;
+            padding: 0 10px;
         }
         .trend-control-body {
-            min-height: 56px;
+            min-height: 80px;
             padding: 8px 10px;
-        }
-        .trend-date-shell {
-            min-height: 102px;
-        }
-        .trend-date-body {
-            min-height: 48px;
         }
     }
 
@@ -936,19 +933,13 @@ def inject_css():
             border-radius: 12px;
         }
         .trend-control-head {
-            min-height: 38px;
+            min-height: 42px;
             border-radius: 10px;
         }
         .trend-control-body {
-            min-height: 52px;
+            min-height: 74px;
             border-radius: 10px;
             padding: 8px 9px;
-        }
-        .trend-date-shell {
-            min-height: 96px;
-        }
-        .trend-date-body {
-            min-height: 46px;
         }
         [data-testid="stPills"] [role="listbox"],
         [data-testid="stPills"] [role="group"] {
@@ -1011,17 +1002,11 @@ def inject_css():
             padding: 8px;
         }
         .trend-control-head {
-            min-height: 36px;
+            min-height: 40px;
         }
         .trend-control-body {
-            min-height: 46px;
+            min-height: 66px;
             padding: 7px 8px;
-        }
-        .trend-date-shell {
-            min-height: 88px;
-        }
-        .trend-date-body {
-            min-height: 42px;
         }
         .hero h1 {
             font-size: 1.32rem;
