@@ -689,6 +689,17 @@ def inject_css():
         padding: 0 12px;
         text-align: center;
     }
+    .trend-control-head [data-testid="stMarkdownContainer"] {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .trend-control-head [data-testid="stMarkdownContainer"] p {
+        width: 100%;
+        text-align: center !important;
+        margin: 0 !important;
+    }
     .trend-control-body {
         background: rgba(19, 32, 64, 0.96);
         border: 1px solid rgba(30, 48, 88, 0.9);
