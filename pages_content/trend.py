@@ -59,7 +59,7 @@ def render():
         unsafe_allow_html=True,
     )
 
-    col_a, col_b, col_c = st.columns([2.05, 2.05, 1.9], vertical_alignment="top")
+    col_a, col_b, col_c = st.columns([2.25, 2.3, 1.7], vertical_alignment="top")
     with col_a:
         st.markdown('<div class="trend-stock-inline">', unsafe_allow_html=True)
         selected_tickers = _box_multiselect(

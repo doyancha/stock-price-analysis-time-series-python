@@ -718,16 +718,17 @@ def inject_css():
     .trend-ma-inline [data-testid="stPills"] [role="group"] {
         flex-wrap: nowrap !important;
         justify-content: center;
-        gap: 4px;
+        gap: 3px;
     }
     .trend-ma-inline [data-testid="stPills"] [role="option"],
     .trend-ma-inline [data-testid="stPills"] button {
         flex: 0 0 auto;
     }
     .trend-ma-inline [data-testid="stPills"] button {
-        padding-left: 0.72rem !important;
-        padding-right: 0.72rem !important;
+        padding-left: 0.58rem !important;
+        padding-right: 0.58rem !important;
         min-width: 0 !important;
+        font-size: 0.86rem !important;
     }
     .trend-ma-inline .trend-control-body {
         overflow-x: visible;
@@ -736,16 +737,17 @@ def inject_css():
     .trend-stock-inline [data-testid="stPills"] [role="group"] {
         flex-wrap: nowrap !important;
         justify-content: center;
-        gap: 4px;
+        gap: 3px;
     }
     .trend-stock-inline [data-testid="stPills"] [role="option"],
     .trend-stock-inline [data-testid="stPills"] button {
         flex: 0 0 auto;
     }
     .trend-stock-inline [data-testid="stPills"] button {
-        padding-left: 0.72rem !important;
-        padding-right: 0.72rem !important;
+        padding-left: 0.58rem !important;
+        padding-right: 0.58rem !important;
         min-width: 0 !important;
+        font-size: 0.86rem !important;
     }
     .trend-stock-inline .trend-control-body {
         overflow-x: visible;
